@@ -25,7 +25,7 @@ export default function Home({ movies }) {
         {movies.map((movie) => (
           <li key={movie.id} className={styles.movieItem}>
             <Link legacyBehavior href={`/movie/${movie.id}`}>
-              <a className={styles.movieLink}>Ver detalhes</a>
+              <a className={styles.movieLink}>Details</a>
             </Link>
             <Image src={movie.image} alt={`Poster do filme ${movie.title}`} width={200} height={300} />
           </li>
