@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.2em;
+    margin-bottom: 2em;
+    background-color: #0398d2;
+    color: #000;
+}
+
+.link_section {
+    display: flex;
+    list-style: none;
+}
+
+.link_section li {
+    margin-right: 1.3em;
+}
+
+.link_section a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px;
+    transition: .4s;
+    border-bottom: 2px solid transparent;
+}
+
+.link_section a:hover {
+    border-color: #000;
+}

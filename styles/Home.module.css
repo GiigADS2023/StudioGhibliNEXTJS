@@ -1,0 +1,98 @@
+.container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.container h1 {
+    font-size: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.movieList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.movieItem {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background-color: #000; 
+}
+
+.movieLink {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, text-decoration 0.3s ease;
+  z-index: 2;
+}
+
+.movieItem:hover .movieLink {
+  opacity: 1; 
+}
+
+.movieItem .movieLink {
+  transition: font-size 0.3s ease, font-weight 0.3s ease, text-decoration 0.3s ease;
+}
+
+.movieItem .movieLink:hover {
+  opacity: 1; 
+  font-weight: bold;        
+}
+
+.movieItem img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.movieItem h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.movieItem:hover h2 {
+  opacity: 1; 
+}
+
+.movieItem::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(3, 152, 210, 0.5); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; 
+}
+
+.movieItem:hover::after {
+  opacity: 1; 
+}
+
+.movieItem:hover {
+    background-color: #0398d2;
+}

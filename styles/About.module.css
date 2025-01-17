@@ -1,0 +1,22 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container ul {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+}

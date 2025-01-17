@@ -1,0 +1,55 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.footer::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #0398d2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.paragraph_footer {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.paragraph_footer span {
+    font-weight: bold;
+    color: #333;
+}
+
+.social_media {
+    display: flex;
+    justify-content: center;
+}
+
+.social_media_icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social_media_icons a {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social_media_icons a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.social_media_icons a:active {
+    transform: scale(1.1);
+    opacity: 0.6;
+}
