@@ -52,11 +52,11 @@ export default function MovieDetails({ movie }) {
         <div className={styles.info}>
           <h1 className={styles.title}>{movie.title}</h1> {/* Usando a classe "title" */}
           <p className={styles.description}>{movie.description}</p>
-          <p className={styles.pText}><span className={styles.pTextStrong}>Diretor:</span> {movie.director}</p>
-          <p className={styles.pText}><span className={styles.pTextStrong}>Produtor:</span> {movie.producer}</p>
-          <p className={styles.pText}><span className={styles.pTextStrong}>Ano de lançamento:</span> {movie.release_date}</p>
-          <p className={styles.pText}><span className={styles.pTextStrong}>Duração:</span> {movie.running_time} min</p>
-          <p className={styles.pText}><span className={styles.pTextStrong}>Classificação Rotten Tomatoes:</span> {movie.rt_score}%</p>
+          <p className={styles.pText}><span className={styles.pTextStrong}>Director:</span> {movie.director}</p>
+          <p className={styles.pText}><span className={styles.pTextStrong}>Producer:</span> {movie.producer}</p>
+          <p className={styles.pText}><span className={styles.pTextStrong}>Release Date:</span> {movie.release_date}</p>
+          <p className={styles.pText}><span className={styles.pTextStrong}>Running Time:</span> {movie.running_time} min</p>
+          <p className={styles.pText}><span className={styles.pTextStrong}>Classification Rotten Tomatoes:</span> {movie.rt_score}%</p>
         </div>
       </div>
     </div>
